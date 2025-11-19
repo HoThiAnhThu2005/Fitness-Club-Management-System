@@ -1,6 +1,6 @@
 <template>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark py-0" style="background-color: #c7a44c;">
+        <nav class="navbar navbar-expand-lg navbar-dark py-0" style="background-color: #efc048;">
             <div class="container"> <a class="navbar-brand fs-4 fw-bold" href="#">
                     <img src="/src/assets/images/logo.png" class="logo-icon" alt="logo icon"
                         style="width:60px; height:auto;"><span class="text-white">GOLDEN GAINS GYM</span></a>
@@ -18,7 +18,7 @@
                             </li>
                         </router-link>
                         <!-- Phòng tập -->
-                        <li class="nav-item dropdown" style="background-color: #c7a44c;">
+                        <li class="nav-item dropdown" style="background-color: #efc048;">
                             <a class="nav-link dropdown-toggle text-light fs-6" href="#" role="button">
                                 Phòng Tập
                             </a>
@@ -31,27 +31,7 @@
                                 </router-link>
                             </ul>
                         </li>
-                        <!-- Dịch vụ -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light fs-6" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dịch Vụ
-                            </a>
-                            <ul class="dropdown-menu">
-                                <router-link to="/dich-vu/goi-tap">
-                                    <li><a class="dropdown-item" href="/dich-vu/goi-tap">Các Gói Tập</a>
-                                    </li>
-                                </router-link>
-                                <router-link to="/dich-vu/thuc-pham-chu-nang">
-                                    <li><a class="dropdown-item" href="/dich-vu/thuc-pham-chu-nang">Thực Phẩm Chức Năng</a>
-                                    </li>
-                                </router-link>
-                                <router-link to="/dich-vu/voucher">
-                                    <li><a class="dropdown-item" href="/dich-vu/voucher">Voucher</a>
-                                    </li>
-                                </router-link>
-                            </ul>
-                        </li>
+                        
                         <!-- Lịch Tập -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light fs-6" href="#" role="button">
@@ -66,6 +46,12 @@
                                 </router-link>
                             </ul>
                         </li>
+                        <!-- Bài viết -->
+                        <router-link to="/bai-viet">
+                            <li class="nav-item"> <a class="nav-link text-light fs-6" href="/bai-viet">Bài Viết</a>
+                            </li>
+                        </router-link>
+
                         <!-- Về chúng tôi -->
                         <router-link to="/about">
                             <li class="nav-item"> <a class="nav-link text-light fs-6" href="/about">Câu chuyện của chúng tôi</a>
@@ -85,12 +71,12 @@
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
-                                    <router-link to="/client/profile">
+                                    <router-link to="/profile">
                                         <li><a class="dropdown-item" href="javascript:;"><i
                                                     class="bx bx-user"></i><span>Profile</span></a>
                                         </li>
                                     </router-link>
-                                    <router-link to="/client/logout">
+                                    <router-link to="/logout">
                                         <li><a class="dropdown-item" href="javascript:;"><i
                                                 class="bx bx-log-out-circle"></i><span>Logout</span></a>
                                     </li>
@@ -124,12 +110,12 @@ export default {
 }
 
 .navbar-gold .dropdown-item {
-    color: #C7A44C;
+    color: #efc048;
     font-weight: 500;
 }
 
 .navbar-gold .dropdown-item:hover {
-    background-color: #C7A44C;
+    background-color: #efc048;
     color: #000;
 }
 </style>
